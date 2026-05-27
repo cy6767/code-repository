@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: "Playfair Display", serif !important;
+}
+
+
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 17px;
+}
+
+header {
+    background-color: #193119;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #021d02;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.form-section,
+.items,
+.home-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-section {
+    max-width: 600px;
+}
+
+.home-section {
+    text-align: center;
+    max-width: 700px;
+    padding: 30px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button,
+button,
+.small-btn,
+.auth-buttons .btn {
+    background-color: #112311;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+form button:hover,
+button:hover,
+.small-btn:hover,
+.auth-buttons .btn:hover {
+    background-color: #022402;
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background: #e6ffe6;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.found-card {
+    border-left: 5px solid green;
+}
+
+.lost-card {
+    border-left: 5px solid red;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.gallery-item {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #ddd;
+}
+
+.status-label {
+    display: block;
+    text-align: center;
+    padding: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.found {
+    background-color: green;
+}
+
+.unclaimed {
+    background-color: red;
+}
+
+.item-desc {
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.item-desc p {
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #193119;
+    color: white;
+}
+
+.danger {
+    background-color: #b30000;
+}
+
+.error {
+    color: #b30000;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.note {
+    font-size: 14px;
+    color: #555;
+}
+
+.page-title {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #010d01;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link .card {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-link .card:hover {
+    transform: scale(1.02);
+    background-color: #d9f5d9;
+}
